@@ -14,12 +14,13 @@ import java.util.Optional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.lucas.superhero.entities.Adventure;
 
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/traveladventures")  
+@RequestMapping("/api/traveladventures")  
 public class TravelAdventuresController {
 
 
